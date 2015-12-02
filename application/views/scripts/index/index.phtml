@@ -1,0 +1,29 @@
+Library API
+-----------
+Usage:
+
+BASEPATH/books/add [(int)"id_author",(int)"id_publisher",(int)"id_collection",(varchar)"book_name",(text)"description"] - adds a books
+BASEPATH/books/get - returns all books
+BASEPATH/books/get/id_book/ID_BOOK - returns book by id
+BASEPATH/books/get/id_author/ID_AUTHOR - returns all books by author id
+BASEPATH/books/get/collection/COLLECTION_NAME - returns all books by collection name
+BASEPATH/books/update/id_book/ID_BOOK [(int)"id_author",(int)"id_publisher",(int)"id_collection",(varchar)"book_name",(text)"description"] - updates a book by id
+BASEPATH/books/delete/id_book/ID_BOOK
+
+BASEPATH/authors/add [(varchar)first_name, (varchar)last_name] - adds an author
+BASEPATH/authors/get - returns all authors
+BASEPATH/authors/get/id_author/ID_AUTHOR - returns author by id
+BASEPATH/authors/update/id_author/ID_AUTHOR [(varchar)first_name, (varchar)last_name] - updates an author by id
+BASEPATH/authors/delete/id_author/ID_AUTHOR - deletes an author by id
+
+BASEPATH/publishers/add [(varchar)publisher_name] - adds a publisher
+BASEPATH/publishers/get - returns all publishers
+BASEPATH/publishers/get/id_publisher/ID_PUBLISHER - returns publisher by id
+BASEPATH/publishers/update/id_publisher/ID_PUBLISHER [(varchar)publisher_name] - updates a publisher by id
+BASEPATH/publishers/delete/id_publisher/ID_PUBLISHER - deletes a publisher by id
+
+BASEPATH/collections/add [(varchar)publisher_name] - adds a collection
+BASEPATH/collections/get - returns all collections
+BASEPATH/collections/get/id_collection/ID_COLLECTION - returns collection by id
+BASEPATH/collections/update/id_collection/ID_COLLECTION [(varchar)publisher_name] - updates a collection by id
+BASEPATH/collections/delete/id_collection/ID_COLLECTION - deletes a collection by id
